@@ -59,8 +59,22 @@ SELECT customer_id, COUNT(order_id) AS order_frequency,
 FROM pizza_sales
 GROUP BY customer_id
 ORDER BY estimated_lifetime_value DESC;
-
-
+** Findings**
+- The Pepperoni Pizza is the best-selling pizza, while the Veggie Delight is the least ordered
+- Sales peak in December, indicating seasonal demand fluctuations
+- Evening hours (6 PM - 9 PM) see the highest number of orders
+- Large-sized pizzas contribute the most revenue
+- The average customer orders 2.5 times per month with an average order value of $15.30
+**Recommendations**
+- Promote high-margin pizzas with discounts or combos to increase sales
+- Optimize staffing & inventory for peak evening hours
+- Launch seasonal promotions around December to maximize sales
+- Encourage upselling on medium and small-sized pizzas to boost revenue
+- Develop a loyalty program to increase customer retention and order frequency
+**Limitations**
+- The dataset lacks customer demographic details, which could help in targeted marketing
+- External factors such as weather, events, or marketing campaigns are not considered
+- The analysis does not include delivery vs. dine-in trends, which may impact peak sales hours
 
 
 
